@@ -33,6 +33,11 @@ const Todos = ({ todos, deleteTodo }) => {
                 }}
               ></Checkbox>
               <ListItemText primary={todo.content} secondary={todo.date} />
+              <ListItemText
+                primary={todo.preconditions}
+                secondary={todo.acceptanceCriteria}
+                style={{ "word-wrap": "break-word" }}
+              />
             </ListItemButton>
           </Card>
         </Grid>
